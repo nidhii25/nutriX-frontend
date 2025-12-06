@@ -232,7 +232,7 @@ export default function MyPlanPage() {
         </div>
 
         <div className="flex gap-2 min-w-max pb-1">
-          {plan.days.map((day, index) => {
+          {plan.days.map((day: any, index:number) => {
             const isSelected = index === selectedDayIndex;
             const meta = getDayMeta(day.tag);
             return (
@@ -334,7 +334,7 @@ export default function MyPlanPage() {
             </div>
 
             <div className="divide-y divide-nutrix-gray-light">
-              {currentDay.meals.map((meal) => (
+              {currentDay.meals.map((meal: any) => (
                 <div key={meal.id} className={`p-5 flex gap-4 transition-colors group ${meal.status === 'eaten' ? 'bg-nutrix-green/5' : ''}`}>
                   <div className="flex-shrink-0 w-16 text-center pt-1">
                     <span className="text-xs font-bold text-nutrix-gray-dark block">{meal.time.split(' ')[0]}</span>

@@ -203,7 +203,7 @@ export default function DashboardPage() {
             <h2 className="text-xl font-bold text-nutrix-green-deep">Meals</h2>
           </div>
           <div className="space-y-4">
-            {currentDay.meals.map((meal) => (
+            {currentDay.meals.map((meal:any) => (
               <div key={meal.id} className={`relative bg-white p-5 border transition-all duration-200 group ${meal.status === "eaten" ? "border-nutrix-green/30 bg-nutrix-green/5" : "border-nutrix-gray-light hover:border-nutrix-green/50"}`}>
                 <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-nutrix-gray-light/50 -z-10 group-first:top-1/2 group-last:bottom-1/2"></div>
                 <div className="flex gap-4 items-start">

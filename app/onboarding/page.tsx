@@ -196,7 +196,7 @@ export default function OnboardingPage() {
           </div>
         </div>
         <div className="text-sm font-medium text-nutrix-gray-dark">
-          {userInfo ? `Hi, ${(userInfo.name || userInfo.full_name || "Athlete").split(" ")[0]}` : "Profile setup"}
+          {userInfo ? `Hi, ${(userInfo.full_name || "Athlete").split(" ")[0]}` : "Profile setup"}
         </div>
       </div>
 
