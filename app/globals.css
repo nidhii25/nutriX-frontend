@@ -1,22 +1,36 @@
 @import "tailwindcss";
 
+/*
+  Defining the NutriX Brand Colors from your palette
+*/
+@theme {
+  /* Primary Greens */
+  --color-nutrix-green: #00BC78;
+  --color-nutrix-green-light: #BEFFE7;
+  --color-nutrix-green-dark: #008D59;
+  --color-nutrix-green-deep: #005E3B;
+
+  /* Primary Blues */
+  --color-nutrix-blue: #0072D8;
+  --color-nutrix-blue-light: #C4E3FF;
+  --color-nutrix-blue-dark: #0055A2;
+  --color-nutrix-blue-deep: #00396C;
+
+  /* Grays */
+  --color-nutrix-gray-light: #F2F2F2;
+  --color-nutrix-gray-medium: #BFBFBF;
+  --color-nutrix-gray-dark: #7F7F7F;
+
+  /* Secondary Accents */
+  --color-nutrix-purple: #A92EF8;
+  --color-nutrix-red: #9B0000;
+  --color-nutrix-yellow: #F7B900;
+  --color-nutrix-teal: #0C8E8B;
+}
+
 :root {
-  --background: #ffffff;
+  --background: #f7f2f2;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
